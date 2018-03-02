@@ -1,0 +1,46 @@
+{
+  "name": "@jworkshop/audioplayer",
+  "version": "0.0.1",
+  "description": "An instance class wrapping an HTML5 audio object.",
+  "author": "jworkshop <john.joydesign@gmail.com>",
+  "keywords": [
+    "audio"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JWorkshop/audioplayer.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.7.2"
+  },
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib --copy-files"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 8,
+      "sourceType": "module"
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true
+    },
+    "extends": [
+      "eslint:recommended"
+    ],
+    "rules": {
+      "semi": 2,
+      "no-empty": 0
+    }
+  }
+}
